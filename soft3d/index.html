@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Soft 3D Reconstruction for View Synthesis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="starter-template">
+        <h1>Soft 3D Reconstruction for View Synthesis</h1>
+        <p class="authors">
+          <div class="author"><a>Eric Penner</a> <br><b>Google Inc.</b></div>
+          <div class="author"><a>Li Zhang</a> <br><b>Google Inc.</b></div>
+        </p>
+        <div id="siggraph_logo" align="right">
+          <a href="https://sa2017.siggraph.org/"><img src="siggraph_logo.png"></a>
+        </div>
+        <div id="teaser"><img src="teaser.jpg" width=100%></div>
+        <div><small><p align="justify">
+          Progress of rendering virtual views of difficult scenes containing foliage, wide baseline
+          occlusions and reflections. View ray and texture mapping ray visibility is modelled softly
+          according to a distribution of depth probabilities retained from the reconstruction stage.
+          This results in soft edges, soft occlusion removal, partial uncertainty of depth in
+          textureless areas, and soft transitions between the dominant depths in reflections.
+        </p></small></div>
+        <div id="abstract">
+          <h3 align="left">Abstract</h3>
+        </div>
+        <div><p align="justify">
+          We present a novel algorithm for view synthesis that utilizes a soft 3D reconstruction
+          to improve quality, continuity and robustness. Our main contribution is the formulation
+          of a soft 3D representation that preserves depth uncertainty through each stage of 3D
+          reconstruction and rendering. We show that this representation is beneficial throughout
+          the view synthesis pipeline. During view synthesis, it provides a soft model of scene
+          geometry that provides continuity across synthesized views and robustness to depth
+          uncertainty. During 3D reconstruction, the same robust estimates of scene visibility can
+          be applied iteratively to improve depth estimation around object edges. Our algorithm is
+          based entirely on O(1) filters, making it conducive to acceleration and it works with
+          structured or unstructured sets of input views. We compare with recent classical and
+          learning-based algorithms on plenoptic lightfields, wide baseline captures, and lightfield
+          videos produced from camera arrays.
+        </p></div>
+        <div>
+          <iframe width="80%" height="600" src="https://www.youtube.com/embed/szJBJ8oWrXI" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <br>
+        <div id="downloads">
+          <div class="download">
+            <a href="Soft_3D_Reconstruction.pdf">
+              <img src="paper_front.jpg" width="80"/><br>Paper PDF (7.3MB)
+            </a>
+          </div>
+          <div class="download">
+            <a href="datasets.zip">
+              <img src="folder.jpg" width="80"/><br><br>Datasets (67MB)
+            </a>
+          </div>
+          <div class="download">
+            <a href="datasets_corrected.zip">
+              <img src="folder.jpg" width="80"/><br><br>Datasets (Color Corrected)
+            </a>
+          </div>
+        </div>
+        <div id="abstract">
+          <h3 align="left">BibTeX</h3>
+<pre align="left" width="75%">@article{Soft3DReconstruction,
+  author    = {Eric Penner and Li Zhang},
+  title     = {Soft 3D Reconstruction for View Synthesis},
+  booktitle = {ACM Transactions on Graphics (Proc. SIGGRAPH Asia)},
+  publisher = {ACM},
+  volume    = {36},
+  number    = {6},
+  year      = {2017}
+}</pre>
+        </div>
+        <div>
+          <h4 align="left">Acknowledgements</h4>
+          <p align="justify">
+            We thank our colleges and collaborators at Google and all authors of prior work for providing
+            their results on several datasets. In particular we would like to thank Marc Comino, Daniel
+            Oliveira, Yongbin Sun, Brian Budge, Henri Astre, Vadim Cugunovs, Jiening Zhan and Kay Zhu for
+            contributing and reviewing code; Matt Pharr and his team for supplying imagery; David Lowe,
+            Matthew Brown, Aseem Agarwala, Matt Pharr and Siggraph Asia reviewers for their feedback on
+            the paper.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
